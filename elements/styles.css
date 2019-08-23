@@ -6,6 +6,7 @@
     padding: 15px;
     border: 1px solid red;
   }
+  @media only screen and (max-width: 768px){
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -18,10 +19,16 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+  }
 .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+  
+    [class*="col-"]{
+      width: 100%;
+    }
   }
   header{
       background-image: url(../images/irish-995924_1920.jpg);
