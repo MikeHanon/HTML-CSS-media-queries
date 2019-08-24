@@ -15,21 +15,102 @@
         <header>
             <a href="#" class="fab fa-airbnb"></a>
             <div class="slogan">
-                <p>Réservez un séjour. Accueillez des voyageurs. Directement sur Airbnb.</p>
+                <h1>Réservez un séjour. Accueillez des voyageurs. Directement sur Airbnb.</h1>
                 <div class="link">
                     <p>Trouvez des logements et des activités</p>
-                    <a href="#" type="button" class="button">Explorer</a>
+                    <a href="#" type="button" subtype="submit" class="btn1">Explorer</a>
                 </div>
                 <div class="link">
                     <p>Réservez un séjour</p>
-                    <a href="#" type="button" class="button">Accueillir</a>
+                    <a href="#" type="button" subtype="submit" class="btn2">Accueillir</a>
                 </div>
             </div>
         </header>
-    </div>
-        <section class="booking"></section>
-        <section class="review"></section>
-        <section class="value"></section>
+        <section class="booking">
+            <div class="title">
+                <h2>Réservez des logements et des expériences uniques</h2>
+            </div>
+            <form action="POST">
+                <div class="where">
+                    <p>Où</p>
+                    <input type="text" name="where" placeholder="Partout">
+                </div>
+                <div class="date">
+                    <p>ARRIVÉE - DÉPART</p>
+                    <div class="start-end">
+                        <input type="date" name="start" value="" min="2019-01-01" max="2022-12-31"> - <input type="date"
+                            name="end" value="" min="2019-01-01" max="2022-12-31">
+                    </div>
+                    <div class="travelers">
+                        <p>VOYAGEURS</p>
+                        <div class="select">
+                            <select name="traveler">
+                                <option>1 voyageurs</option>
+                                <option>2 voyageurs</option>
+                                <option>3 voyageurs</option>
+                                <option>4 voyageurs</option>
+                                <option>5 voyageurs</option>
+                                <option>6 voyageurs</option>
+                                <option>7 voyageurs</option>
+                                <option>8 voyageurs</option>
+                                <option>9 voyageurs</option>
+                                <option>10 voyageurs</option>
+                                <option>11 voyageurs</option>
+                                <option>12 voyageurs</option>
+                                <option>13 voyageurs</option>
+                                <option>14 voyageurs</option>
+                                <option>15 voyageurs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" type="button" subtype="submit" class="btn3">Rechercher</a>
+                </div>
+            </form>
+        </section>
+        <section class="review">
+            <div class="title">
+                    <h2>Belgique : ce que les autres voyageurs ont pensé de leur logement</h2>
+            </div>
+            <div class="card-holder">
+                <img src="images/star-154489_640.png" alt="" width="1.5%"><h3>Les logements de Belgique ont obtenu 4.6 étoiles sur 5 et plus de 950.000 commentaires</h3>
+                <div class="card">
+                    <div class="card-img"><img src="images/bedroom-389254_1280.jpg" alt="chambre bruxelles"></div>
+                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="comment"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in nibh mauris cursus.</p></div>
+                    <div class="people"><img src="images/man-1485335_640.jpg" alt=""><h3>LOREM IPSUM</h3><h4>France</h4></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="images/bedroom-416062_1280.jpg" alt="chambre bruxelles"></div>
+                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="comment"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in nibh mauris cursus.</p></div>
+                    <div class="people"><img src="images/model-2911363_640.jpg" alt=""><h3>LOREM IPSUM</h3><h4>France</h4></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="images/lifestyle-3107041_1920.jpg" alt="chambre bruxelles"></div>
+                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="comment"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in nibh mauris cursus.</p></div>
+                    <div class="people"><img src="images/woman-3219507_640.jpg" alt=""><h3>LOREM IPSUM</h3><h4>France</h4></div>
+                </div>
+            </div>
+        </section>
+        <section class="value">
+            <div class="title2"><h2>Voyager avec Airbnb</h2></div>
+            <div class="value1">
+                <i class="far fa-heart"></i>
+                <h3>Assistance utilisateurs 24h/24</h3>
+                <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à toute heure</p>
+            </div>
+            <div class="value2">
+                <i class="fas fa-home"></i>
+                <h3>Charte d'hospitalité générale</h3>
+                <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+            </div>
+            <div class="value1">
+                <i class="fas fa-user-alt"></i>
+                <h3>Hôtes 5 étoiles/h3>
+                <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est une seconde nature chez les hôtes Airbnb.</p>
+            </div>
+        </section>
         <section class="home"></section>
         <section class="dates"></section>
         <footer></footer>
