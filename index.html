@@ -15,8 +15,9 @@
         <header id="header">
             <a href="#" class="fab fa-airbnb"></a>
             <div class="slogan">
-                <p>Réservez un séjour.Accueillez des voyageurs. Directement sur Airbnb.</p>
+                <p>Réservez un séjour. Accueillez des voyageurs. Directement sur Airbnb.</p>
             </div>
+            <div class="nav">
                 <div class="link">
                     <p>Trouvez des logements et des activités</p>
                     <a href="#" type="button" subtype="submit" class="btn1">Explorer</a>
@@ -25,25 +26,26 @@
                     <p>Réservez un séjour</p>
                     <a href="#" type="button" subtype="submit" class="btn2">Accueillir</a>
                 </div>
-            
+            </div>
         </header>
         <section class="booking" id="date">
             <div class="title">
                 <h2>Réservez des logements et des expériences uniques</h2>
             </div>
-            <form action="POST">
+            
+            <form class="frm" action="POST">
                 <div class="where">
-                    <p>Où</p>
+                    <label for="where">Où</label>
                     <input type="text" name="where" placeholder="Partout">
                 </div>
                 <div class="date">
-                    <p>ARRIVÉE - DÉPART</p>
+                    <label for="date">ARRIVÉE - DÉPART</label>
                     <div class="start-end">
                         <input type="date" name="start" value="" min="2019-01-01" max="2022-12-31"> - <input type="date"
                             name="end" value="" min="2019-01-01" max="2022-12-31">
                     </div>
                     <div class="travelers">
-                        <p>VOYAGEURS</p>
+                        <label for="travelers">VOYAGEURS</label>
                         <div class="select">
                             <select name="traveler">
                                 <option>1 voyageurs</option>
@@ -67,53 +69,86 @@
                     <a href="#" type="button" subtype="submit" class="btn3">Rechercher</a>
                 </div>
             </form>
+       
         </section>
         <section class="review">
             <div class="title">
-                    <h2>Belgique : ce que les autres voyageurs ont pensé de leur logement</h2>
+                <h2>Belgique : ce que les autres voyageurs ont pensé de leur logement</h2>
             </div>
             <div class="card-holder">
-                <img src="images/star-154489_640.png" alt="" width="1.5%"><h3>Les logements de Belgique ont obtenu 4.6 étoiles sur 5 et plus de 950.000 commentaires</h3>
+                <img src="images/star-154489_640.png" alt="" width="1.5%">
+                <h3>Les logements de Belgique ont obtenu 4.6 étoiles sur 5 et plus de 950.000 commentaires</h3>
                 <div class="card">
                     <div class="card-img"><img src="images/bedroom-389254_1280.jpg" alt="chambre bruxelles"></div>
-                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <div class="comment"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in nibh mauris cursus.</p></div>
-                    <div class="people"><img src="images/man-1485335_640.jpg" alt=""><h3>LOREM IPSUM</h3><h4>France</h4></div>
+                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in
+                            nibh mauris cursus.</p>
+                    </div>
+                    <div class="people"><img src="images/man-1485335_640.jpg" alt="">
+                        <h3>LOREM IPSUM</h3>
+                        <h4>France</h4>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-img"><img src="images/bedroom-416062_1280.jpg" alt="chambre bruxelles"></div>
-                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <div class="comment"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in nibh mauris cursus.</p></div>
-                    <div class="people"><img src="images/model-2911363_640.jpg" alt=""><h3>LOREM IPSUM</h3><h4>France</h4></div>
+                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in
+                            nibh mauris cursus.</p>
+                    </div>
+                    <div class="people"><img src="images/model-2911363_640.jpg" alt="">
+                        <h3>LOREM IPSUM</h3>
+                        <h4>France</h4>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-img"><img src="images/lifestyle-3107041_1920.jpg" alt="chambre bruxelles"></div>
-                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <div class="comment"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in nibh mauris cursus.</p></div>
-                    <div class="people"><img src="images/woman-3219507_640.jpg" alt=""><h3>LOREM IPSUM</h3><h4>France</h4></div>
+                    <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in
+                            nibh mauris cursus.</p>
+                    </div>
+                    <div class="people"><img src="images/woman-3219507_640.jpg" alt="">
+                        <h3>LOREM IPSUM</h3>
+                        <h4>France</h4>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="value">
-            <div class="title"><h2>Voyager avec Airbnb</h2></div>
+            <div class="title">
+                <h2>Voyager avec Airbnb</h2>
+            </div>
             <div class="value1">
                 <i class="far fa-heart"></i>
                 <h3>Assistance utilisateurs 24h/24</h3>
-                <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à toute heure</p>
+                <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
+                    toute heure</p>
             </div>
             <div class="value2">
                 <i class="fas fa-home"></i>
                 <h3>Charte d'hospitalité générale</h3>
-                <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+                <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation
+                    minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
             </div>
             <div class="value1">
                 <i class="fas fa-user-alt"></i>
                 <h3>Hôtes 5 étoiles/h3>
-                <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est une seconde nature chez les hôtes Airbnb.</p>
+                    <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
+                        une seconde nature chez les hôtes Airbnb.</p>
             </div>
         </section>
         <section class="home">
-            <div class="title"><h2>Réservé à l'instant à Belgique</h2></div>
+            <div class="title">
+                <h2>Réservé à l'instant à Belgique</h2>
+            </div>
             <div class="card-holder">
                 <div class="card2">
                     <div class="card-img"><img src="images/architecture-1477041_1280.jpg" alt=""></div>
@@ -121,7 +156,10 @@
                         <h4>Lorem Ipsum</h4>
                         <h3>lorem Ipsum sit amet</h3>
                         <p>110€/nuit</p>
-                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>485 Superhost</p></div>
+                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <p>485 Superhost</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card2">
@@ -130,7 +168,10 @@
                         <h4>Lorem Ipsum</h4>
                         <h3>lorem Ipsum sit amet</h3>
                         <p>110€/nuit</p>
-                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>669 Superhost</p></div>
+                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <p>669 Superhost</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card2">
@@ -139,7 +180,10 @@
                         <h4>Lorem Ipsum</h4>
                         <h3>lorem Ipsum sit amet</h3>
                         <p>110€/nuit</p>
-                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>293</p></div>
+                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <p>293</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card2">
@@ -148,13 +192,18 @@
                         <h4>Lorem Ipsum</h4>
                         <h3>lorem Ipsum sit amet</h3>
                         <p>150€/nuit</p>
-                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>86 Superhost</p></div>
+                        <div class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <p>86 Superhost</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="dates">
-            <div class="title"><h2>Quand voyagez-vous ?</h2></div>
+            <div class="title">
+                <h2>Quand voyagez-vous ?</h2>
+            </div>
             <p>Vérifiez la disponibilité et le prix en ajoutant des dates.</p>
             <a href="#date" type="button" subtype="submit" class="btn4">Ajouter des dates</a>
         </section>
@@ -164,34 +213,36 @@
                     <h3>Airbnb</h3>
                     <ul>
                         <li><a href="#">Carrières</a></li>
-                    <li><a href="#">Actualités</a></li>
-                    <li><a href="#">Règles</a></li>
-                    <li><a href="#">Aide</a></li>
-                    <li><a href="#">Diversité et intégration</a></li>
-                    <li><a href="#">Coordonnées de l'entreprise</a></li>
-                </ul>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Règles</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li><a href="#">Diversité et intégration</a></li>
+                        <li><a href="#">Coordonnées de l'entreprise</a></li>
+                    </ul>
                 </div>
                 <div class="discover">
                     <h3>Découvrir</h3>
                     <ul>
-                    <li><a href="#">Confiance et sécurité</a></li>
-                    <li><a href="#">Travel Credit</a></li>
-                    <li><a href="#">Airbnb Citizen</a></li>
-                    <li><a href="#">Voyage d'affaires</a></li>
-                    <li><a href="#">Guides</a></li>
-                    <li><a href="#">Airbnbmag</a></li>
-                </ul>
+                        <li><a href="#">Confiance et sécurité</a></li>
+                        <li><a href="#">Travel Credit</a></li>
+                        <li><a href="#">Airbnb Citizen</a></li>
+                        <li><a href="#">Voyage d'affaires</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Airbnbmag</a></li>
+                    </ul>
                 </div>
                 <div class="accommodation">
                     <h3>Hébergement</h3>
                     <ul>
-                    <li><a href="#">Pourquoi être hôte</a></li>
-                    <li><a href="#">Hospitalité</a></li>
-                    <li><a href="#">Hébergement responsable</a></li>
-                    <li><a href="#">Community Center</a></li>
-                    <li><a href="#">Organiser une expérience</a><p class="token">Nouveau</p></li>
-                    <li><a href="#">Open Homes</a></li>
-                </ul>
+                        <li><a href="#">Pourquoi être hôte</a></li>
+                        <li><a href="#">Hospitalité</a></li>
+                        <li><a href="#">Hébergement responsable</a></li>
+                        <li><a href="#">Community Center</a></li>
+                        <li><a href="#">Organiser une expérience</a>
+                            <p class="token">Nouveau</p>
+                        </li>
+                        <li><a href="#">Open Homes</a></li>
+                    </ul>
                 </div>
                 <div class="condition">
                     <div class="social-media">
@@ -200,14 +251,15 @@
                         <a href="" class="fab fa-instagram"></a>
                     </div>
                     <ul>
-                    <li><a href="#">Conditions</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                </ul>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="copywright">
-                <i class="fab fa-airbnb"></i><p>© 2019 Airbnb, Inc. All rights reserved.</p>
+                <i class="fab fa-airbnb"></i>
+                <p>© 2019 Airbnb, Inc. All rights reserved.</p>
             </div>
         </footer>
     </main>

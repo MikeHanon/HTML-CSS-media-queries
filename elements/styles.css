@@ -1,6 +1,11 @@
 
-body{
-  margin:0;
+body, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family:  Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
 }
 .main{
   display: flex;
@@ -16,6 +21,7 @@ body{
       display: flex;
       padding: 15px;
       flex-direction: column;
+      
 
   }
   header > .fab{
@@ -24,13 +30,95 @@ body{
       text-decoration: none;
       padding:5px;
   }
-  
+  .slogan{
+    width:80%;
+    margin:auto;
+  }
   
   .slogan > p{
-    font-size: 2em;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 38px !important;
+    font-weight: 800 !important;
+    line-height: 1.1578947368421053em !important;
+    color: #ffffff !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
   }
- @media on screen and (max-width: 600px)
-  .slogan{
-    width: 90%;
-    margin: auto
+  
+  
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .link{
+    width:50%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 5em;
+  }
+  .link > p{
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.4444444444444444em !important;
+    padding-bottom: 2em;
+  }
+
+  .btn1{
+    border: 2px solid white;
+    width: 100%;
+    margin: auto;
+    padding: 1em 10em;
+    background-color: white;
+    color:#484848;
+    border-radius:4px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 18px !important;
+    letter-spacing: normal !important;
+    
+  }
+  .btn2{
+    border: 2px solid white;
+    width: 100%;
+    margin: auto;
+    padding: 1em 10em;
+    background-color: #008489;
+    color:#FFF;
+    border-radius:4px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 18px !important;
+    letter-spacing: normal !important;
+    
+  }
+  .frm{
+    display: flex;
+    flex-direction: row wrap;
+    align-content: center;
+  }
+  .frm label{
+      margin: 5px 10px 5px 0;
+  }
+  .frm input{
+    vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  }
+  .title{
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    line-height: 1.25em !important;
+    color: #484848 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
   }
