@@ -30,7 +30,7 @@ body, p{
       text-decoration: none;
       padding:5px;
   }
-  .slogan{
+  .slogan, .booking, .review, .value, .home, .dates, footer{
     width:80%;
     margin:auto;
   }
@@ -56,10 +56,11 @@ body, p{
     margin: auto;
   }
   .link{
-    width:50%;
+    width:80%;
     margin: auto;
     padding-top: 2em;
     padding-bottom: 5em;
+    
   }
   .link > p{
     font-size: 18px !important;
@@ -96,29 +97,160 @@ body, p{
     letter-spacing: normal !important;
     
   }
-  .frm{
+  
+  .where, .date, .travelers{
+    height: 48px;
+    width: 25%;
+    padding: 10px;
     display: flex;
-    flex-direction: row wrap;
-    align-content: center;
+    flex-direction: column;
   }
-  .frm label{
-      margin: 5px 10px 5px 0;
+
+  .frm{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .frm input{
-    vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  .where input, .travelers select{
+    height: 48px;
+    width: 100%;
+    padding: 15px 11px;
+    
   }
+  
   .title{
-    margin: 0px !important;
+    margin: auto;
+    width: 100%;
     word-wrap: break-word !important;
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
     font-size: 24px !important;
     font-weight: 800 !important;
     line-height: 1.25em !important;
     color: #484848 !important;
-    padding-top: 2px !important;
-    padding-bottom: 2px !important;
+    padding: 2px;
+  }
+  .start-end{
+    display: flex;
+    border: 1px solid rgb(0,0,0,0.3);
+    height: 48px;
+    padding: 15px 5px;
+    
+  }
+  .start-end input{
+    border: none;
+  }
+  .btn3{
+    border: 2px solid #F25764;
+    border-radius: 4px;
+    background-color: #F25764;
+    color: white;
+    text-decoration: none;
+    padding:15px 35px;
+
+  }
+  .find{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .subtitle{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .subtitle img{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+  .card-holder{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 8px;
+    width: 100%
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: auto;
+  }
+  
+  .card-img{
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+  }
+  .card-img img{
+    width: 100%;
+    height: 100%
+  }
+  .icon{
+    font-size: 1em;
+    color:#348589;
+  }
+  .comment{
+    width: 95%;
+    padding-right: 1em;
+  }
+  .people{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  .info{
+    display: block;
+  }
+  .profile-photo{
+    width:48px;
+    height:48px;
+    padding: 10px;
+  }
+  .profile-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+  }
+  h3{
+    margin: 0;
+  }
+  h4{
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+  }
+  .value{
+    display:flex;
+    flex-direction: column;
+    align-items: initial;
+    
+  }
+  .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 25px 0px
+  }
+  .value1{
+    width: 33%;
+    padding: 0px 6px !important;
+  }
+  .value1 > i{
+    color:#348589;
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+  .card2{
+    width: 25% !important;
+    padding: 0 6px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card2 > .card-img{
+    width:100%;
+    height: 100%;
   }

@@ -32,7 +32,7 @@
             <div class="title">
                 <h2>Réservez des logements et des expériences uniques</h2>
             </div>
-            
+
             <form class="frm" action="POST">
                 <div class="where">
                     <label for="where">Où</label>
@@ -44,40 +44,45 @@
                         <input type="date" name="start" value="" min="2019-01-01" max="2022-12-31"> - <input type="date"
                             name="end" value="" min="2019-01-01" max="2022-12-31">
                     </div>
-                    <div class="travelers">
-                        <label for="travelers">VOYAGEURS</label>
-                        <div class="select">
-                            <select name="traveler">
-                                <option>1 voyageurs</option>
-                                <option>2 voyageurs</option>
-                                <option>3 voyageurs</option>
-                                <option>4 voyageurs</option>
-                                <option>5 voyageurs</option>
-                                <option>6 voyageurs</option>
-                                <option>7 voyageurs</option>
-                                <option>8 voyageurs</option>
-                                <option>9 voyageurs</option>
-                                <option>10 voyageurs</option>
-                                <option>11 voyageurs</option>
-                                <option>12 voyageurs</option>
-                                <option>13 voyageurs</option>
-                                <option>14 voyageurs</option>
-                                <option>15 voyageurs</option>
-                            </select>
-                        </div>
+                </div>
+                <div class="travelers">
+                    <label for="travelers">VOYAGEURS</label>
+                    <div class="select">
+                        <select name="traveler">
+                            <option>1 voyageurs</option>
+                            <option>2 voyageurs</option>
+                            <option>3 voyageurs</option>
+                            <option>4 voyageurs</option>
+                            <option>5 voyageurs</option>
+                            <option>6 voyageurs</option>
+                            <option>7 voyageurs</option>
+                            <option>8 voyageurs</option>
+                            <option>9 voyageurs</option>
+                            <option>10 voyageurs</option>
+                            <option>11 voyageurs</option>
+                            <option>12 voyageurs</option>
+                            <option>13 voyageurs</option>
+                            <option>14 voyageurs</option>
+                            <option>15 voyageurs</option>
+                        </select>
                     </div>
+                </div>
+                <div class="find">
                     <a href="#" type="button" subtype="submit" class="btn3">Rechercher</a>
                 </div>
+                </div>
             </form>
-       
+
         </section>
         <section class="review">
             <div class="title">
                 <h2>Belgique : ce que les autres voyageurs ont pensé de leur logement</h2>
             </div>
-            <div class="card-holder">
+            <div class="subtitle">
                 <img src="images/star-154489_640.png" alt="" width="1.5%">
                 <h3>Les logements de Belgique ont obtenu 4.6 étoiles sur 5 et plus de 950.000 commentaires</h3>
+            </div>
+            <div class="card-holder">
                 <div class="card">
                     <div class="card-img"><img src="images/bedroom-389254_1280.jpg" alt="chambre bruxelles"></div>
                     <div class="icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -87,9 +92,12 @@
                             labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in
                             nibh mauris cursus.</p>
                     </div>
-                    <div class="people"><img src="images/man-1485335_640.jpg" alt="">
-                        <h3>LOREM IPSUM</h3>
-                        <h4>France</h4>
+                    <div class="people">
+                        <div class="profile-photo"><img src="images/man-1485335_640.jpg" alt=""></div>
+                        <div class="info">
+                            <h3>LOREM IPSUM</h3>
+                            <h4>France</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -101,9 +109,12 @@
                             labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in
                             nibh mauris cursus.</p>
                     </div>
-                    <div class="people"><img src="images/model-2911363_640.jpg" alt="">
-                        <h3>LOREM IPSUM</h3>
-                        <h4>France</h4>
+                    <div class="people">
+                        <div class="profile-photo"><img src="images/woman-3219507_640.jpg" alt=""></div>
+                        <div class="info">
+                            <h3>LOREM IPSUM</h3>
+                            <h4>France</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -115,9 +126,12 @@
                             labore et dolore magna aliqua. Lorem dolor sed viverra ipsum. Suspendisse in est ante in
                             nibh mauris cursus.</p>
                     </div>
-                    <div class="people"><img src="images/woman-3219507_640.jpg" alt="">
-                        <h3>LOREM IPSUM</h3>
-                        <h4>France</h4>
+                    <div class="people">
+                        <div class="profile-photo"><img src="images/model-2911363_640.jpg" alt=""></div>
+                        <div class="info">
+                            <h3>LOREM IPSUM</h3>
+                            <h4>France</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,23 +140,26 @@
             <div class="title">
                 <h2>Voyager avec Airbnb</h2>
             </div>
-            <div class="value1">
-                <i class="far fa-heart"></i>
-                <h3>Assistance utilisateurs 24h/24</h3>
-                <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
-                    toute heure</p>
-            </div>
-            <div class="value2">
-                <i class="fas fa-home"></i>
-                <h3>Charte d'hospitalité générale</h3>
-                <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation
-                    minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
-            </div>
-            <div class="value1">
-                <i class="fas fa-user-alt"></i>
-                <h3>Hôtes 5 étoiles/h3>
+            <div class="text">
+                <div class="value1">
+                    <i class="far fa-heart"></i>
+                    <h3>Assistance utilisateurs 24h/24</h3>
+                    <p>Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à
+                        toute heure</p>
+                </div>
+                <div class="value1">
+                    <i class="fas fa-home"></i>
+                    <h3>Charte d'hospitalité générale</h3>
+                    <p>Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une
+                        évaluation
+                        minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.</p>
+                </div>
+                <div class="value1">
+                    <i class="fas fa-user-alt"></i>
+                    <h3>Hôtes 5 étoiles</h3>
                     <p>Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est
                         une seconde nature chez les hôtes Airbnb.</p>
+                </div>
             </div>
         </section>
         <section class="home">
@@ -208,7 +225,7 @@
             <a href="#date" type="button" subtype="submit" class="btn4">Ajouter des dates</a>
         </section>
         <footer>
-            <div class="link">
+            <div class="link2">
                 <div class="airbnb">
                     <h3>Airbnb</h3>
                     <ul>
