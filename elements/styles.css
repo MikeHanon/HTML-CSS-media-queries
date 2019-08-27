@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box; 
+}
 body, p{
   margin: 0;
   padding: 0;
@@ -395,7 +397,10 @@ body, p{
       width:300px;
       height: 220px;
     }
-    
+    .text{
+      width: 100%;
+      overflow-y: scroll;
+    }
     .value1{
       width: 100%
     }
@@ -444,6 +449,10 @@ body, p{
     .start-end{
       border: none;
     }
+    .start-end input{
+      padding: 5px 0px;
+      width: 100%
+    }
     .btn1, .btn2, .btn3{
       width:80%;
       margin: auto;
@@ -458,9 +467,13 @@ body, p{
       overflow-x: scroll;
     }
     .card{
-      width: 100%;
+      width: 50%;
       margin:auto;
-      padding-right: 100px;
+      padding-right: 50px;
+    }
+    .card-img{
+      width: 200px;
+      height: 120px;
     }
     .card2{
       width: 100%;
@@ -470,10 +483,18 @@ body, p{
       height: 220px;
     }
     
+    
     .value1{
       width: 100%
     }
-    .link2{
-      display: none;
+    footer{
+      width: 80%;
+      margin: auto;
     }
+    .link2{
+      width:80%;
+      margin:0;
+    }
+    .discover, .accommodation, .condition{
+      margin-left: 30px;}
   }
