@@ -241,7 +241,7 @@ body, p{
     padding-bottom: 1em;
   }
   .card2{
-    width: 25% !important;
+    width: 25%;
     padding: 0 6px;
     display: flex;
     flex-direction: column;
@@ -333,8 +333,19 @@ body, p{
     margin-left: 90px;
   }
   @media only screen and (min-width: 300px) and (max-width: 720px){
+    .slogan > p{
+      margin: 0px !important;
+      word-wrap: break-word !important;
+      font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+      font-size: 32px !important;
+      line-height: 1.15em;
+      color: #ffffff ;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
     .nav{
-      width:100%;
+      width:80%;
+      margin: auto;
       display: flex;
       flex-direction: column;
     }
@@ -351,18 +362,45 @@ body, p{
       border: 1px solid #EBEBEB;
       
     }
-    .where, .date, .travelers, .find{
-      width: 100%;
-     
-      margin:20px;
+    .where, .date, .travelers, .find, .btn4{
+      width: 80%;
+      margin:auto;
     }
     
     .start-end{
       border: none;
     }
-    .btn1, .btn2{
+    .btn1, .btn2, .btn3{
       width:80%;
       margin: auto;
-      padding:10px 100px;
+      padding:10px 120px;
+    }
+    .btn2{
+      background-image: linear-gradient(to left, black, grey)
+    }
+    .card-holder{
+      width: 80%;
+      margin: auto;
+      overflow-x: scroll;
+    }
+    .card{
+      width: 100%;
+      margin:auto;
+      padding-right: 100px;
+    }
+    .card2{
+      width: 100%;
+    }
+    .card2 > .card-img{
+      width:300px;
+      height: 220px;
+    }
+    }
+    .value1{
+      width: 100%
+    }
+    .link2{
+      display: none;
     }
   }
+  
