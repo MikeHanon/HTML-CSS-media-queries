@@ -407,6 +407,14 @@ body, p{
     }
   }
   @media only screen and (min-width: 720px) and (max-width: 1024px){
+    html, body, p{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      font-family:  Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    }
     .slogan > p{
       margin: 0px !important;
       word-wrap: break-word !important;
@@ -442,6 +450,7 @@ body, p{
     .where, .date, .travelers, .find, .btn4{
       width: 80%;
       margin:auto;
+      height:70px;
     }
     
     .start-end{
@@ -458,6 +467,9 @@ body, p{
     }
     .btn2{
       background-image: linear-gradient(to left, black, grey)
+    }
+    .btn3{
+      text-align: center;
     }
     .card-holder{
       width: 80%;
