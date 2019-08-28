@@ -373,7 +373,7 @@ body, p{
     .btn1, .btn2, .btn3{
       width:80%;
       margin: auto;
-      padding:10px 120px;
+      padding:10px 85px;
     }
     .btn2{
       background-image: linear-gradient(to left, black, grey)
@@ -395,12 +395,16 @@ body, p{
       width:300px;
       height: 220px;
     }
+    .value{
+      width: 100%;
+    }
     .text{
       width: 100%;
       overflow-y: scroll;
     }
     .value1{
-      width: 100%
+      width: 100%;
+      padding: 0 1.5px !important;
     }
     .link2{
       display: none;
@@ -494,9 +498,7 @@ body, p{
     }
     
     
-    .value1{
-      width: 100%
-    }
+    
     footer{
       width: 80%;
       margin: auto;
