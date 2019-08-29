@@ -113,7 +113,9 @@ body, p{
     padding: 15px 11px;
     
   }
-  
+  .subtitle > img{
+    width:1%;
+  }
   .title{
     margin: auto;
     width: 100%;
